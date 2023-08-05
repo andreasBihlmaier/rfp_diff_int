@@ -23,6 +23,7 @@ setup(
             'traj1d_generator = rfp_diff_int.traj1d_generator:main',
             'turtle_teleporter = rfp_diff_int.turtle_teleporter:main',
             'traj1d_differentiator = rfp_diff_int.traj1d_differentiator:main',
+            'twist_integrator = rfp_diff_int.twist_integrator:main',
         ],
     },
 )

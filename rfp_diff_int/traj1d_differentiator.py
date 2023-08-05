@@ -7,13 +7,15 @@ from geometry_msgs.msg import Twist, Accel
 
 class Traj1dDifferentiator(Node):
     '''
-    TODO
+    Subscribes to a trajectory (turtlesim/Pose) and publish its derivatives,
+    velocity as geometry_msgs/Twist and acceleration as geometry_msgs/Accel.
     '''
 
     def __init__(self):
         super().__init__('traj1d_differentiator')
 
-        # A real implementation should take time into account - ideally by using PoseStamped and TwistStamped.
+        # A real implementation should take time into account,
+        # ideally by using PoseStamped and TwistStamped.
         # This simple implementation assumes that the pose is published at a fixed rate.
         self.time_delta = 0.1
 

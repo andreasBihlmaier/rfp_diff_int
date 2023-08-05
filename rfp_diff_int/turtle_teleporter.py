@@ -24,7 +24,9 @@ class TurtleTeleporter(Node):
         teleport_request.y = turtlesim_start_pos  # starting position
         teleport_request.theta = msg.theta
         self.get_logger().info(
-            f'Teleporting turtle to x={msg.x}, y={msg.y}, theta={msg.theta} (mapped to x={teleport_request.x}, y={teleport_request.y}, theta={teleport_request.theta})')
+            f'Teleporting turtle to x={msg.x}, y={msg.y}, theta={msg.theta} '
+            '(mapped to x={teleport_request.x}, y={teleport_request.y}, '
+            'theta={teleport_request.theta})')
         self.teleport_service.call_async(teleport_request)
 
 
